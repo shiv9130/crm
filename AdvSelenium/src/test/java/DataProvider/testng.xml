@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="Suite" parallel="tests">
+
+  <test thread-count="5" name="cTest">
+  <parameter name="browser" value="chrome"></parameter>
+  <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+    <classes>
+      <class name="DataProvider.parameterTesting"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="eTest">
+  <parameter name="browser" value="edge"></parameter>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+  
+    <classes>
+      <class name="DataProvider.parameterTesting"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="fTest">
+  <parameter name="browser" value="firefox"></parameter>
+    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"></parameter>
+  
+    <classes>
+      <class name="DataProvider.parameterTesting"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
