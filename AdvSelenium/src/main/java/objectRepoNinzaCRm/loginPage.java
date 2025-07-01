@@ -36,14 +36,14 @@ public class loginPage extends basePage {
 		return signIn;
 	}
        
-	//actionMethod 
+	//actionMethod business logic class
 	public void username(String name) {
 		username.sendKeys(name);
 	}
 	public void password(String pw) {
 		password.sendKeys(pw);
 	}
-	public void password() {
+	public void signIN() {
 		signIn.click();
 	}
 

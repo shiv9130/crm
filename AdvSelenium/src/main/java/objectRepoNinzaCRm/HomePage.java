@@ -25,6 +25,9 @@ public class HomePage extends basePage{
 		
 		@FindBy(linkText = "Products") 
 		private WebElement lnkproduct;
+		
+		@FindBy(xpath = "//div[text()='Logout ']")
+		private WebElement logOutLink;
 
 		public WebElement getLnkcampaign() {
 			return lnkcampaign;
@@ -52,6 +55,14 @@ public class HomePage extends basePage{
 			lnkcampaign.click();
 		}
 		
+		public WebElement getLogOutLink() {
+			return logOutLink;
+		}
+
+		public void setLogOutLink(WebElement logOutLink) {
+			this.logOutLink = logOutLink;
+		}
+
 		public void contactlink() {
 			lnkcontact.click();
 		}

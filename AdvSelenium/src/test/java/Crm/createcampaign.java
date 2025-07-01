@@ -14,7 +14,7 @@ public class createcampaign extends BaseClass {
 	@Test
 	public void createCampaignPage() throws EncryptedDocumentException, IOException {
 		
-		createCampaign cp = new createCampaign(driver);
+		createCampaign cp = new createCampaign(sdriver);
 		cp.getBtn1createcampainMain();
 		ExcelFileUtility eu= new ExcelFileUtility();
 		String name1 = eu.excelUtility("Testdata", 1, 0);
